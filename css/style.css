@@ -7,7 +7,7 @@
 }
 
 .logo {
-    width: 125px;
+    width: 100px;
 }
 
 body {
@@ -48,7 +48,7 @@ button {
     opacity: 0.5;
     font-size: 40px;
     border-radius: 25px;
-    border:5px inset black ;
+    border:5px inset green ;
     font-family: monospace;
 }
 
@@ -66,4 +66,24 @@ button:hover {
 body{
 
     margin-left:20px;
+} 
+
+.name {
+    width: 350px;
+} 
+
+.dereq {
+    width: 350px;
+} 
+
+.mainq {
+    width: 350px;
+} 
+
+.powerq {
+    width: 350px;
+} 
+
+.genreq {
+    width: 350px;
 }

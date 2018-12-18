@@ -2,14 +2,14 @@
 
 $(document).ready(function() {
     $("button").click(function() {
-        var name = $("#nameq").val();
+        var name = $(".nameq").val();
         var id = "TBD";
         var imgSrc = "https://media.giphy.com/media/22zgHX8aop488/giphy.gif";
-        var q1Result = $("#nameq").val();
-        var q2Result = $("#dereq").val();
-        var q3Result = $("#mainq").val();
-        var q4Result = $("#powerq").val();
-        var q5Result = $("#genreq").val();
+        var q1Result = $(".nameq").val();
+        var q2Result = $(".dereq").val().toLowerCase();
+        var q3Result = $(".mainq").val().toLowerCase();
+        var q4Result = $(".powerq").val().toLowerCase();
+        var q5Result = $(".genreq").val().toLowerCase();
         
         function namae() {
             return 0;
@@ -18,13 +18,13 @@ $(document).ready(function() {
         namae();
         
         function dere() {
-            if(q2Result === "Yandere") {
+            if(q2Result === "yandere") {
                 return 0;
-            } else if(q2Result === "Tsundere") {
+            } else if(q2Result === "dandere") {
                 return 1;
-            } else if(q2Result === "Kuudere") {
+            } else if(q2Result === "kuudere") {
                 return 2;
-            } else if(q2Result === "Dandere") {
+            } else if(q2Result === "tsundere") {
                 return 3;
             } else {
                 return 5;
@@ -34,13 +34,13 @@ $(document).ready(function() {
         dere();
         
         function protag() {
-            if(q3Result === "Yuki") {
+            if(q3Result === "yuki") {
                 return 0;
-            } else if(q3Result === "Soma") {
+            } else if(q3Result === "madoka") {
                 return 1;
-            } else if(q3Result === "Yuki") {
+            } else if(q3Result === "eren") {
                 return 2;
-            } else if(q3Result === "Yuki") {
+            } else if(q3Result === "soma") {
                 return 3;
             } else {
                 return 5;
@@ -52,9 +52,9 @@ $(document).ready(function() {
         function power() {
             if(q4Result === "killing") {
                 return 0;
-            } else if(q4Result === "cooking") {
-                return 1;
             } else if(q4Result === "magic") {
+                return 1;
+            } else if(q4Result === "fighting") {
                 return 2;
             } else if(q4Result === "cooking") {
                 return 3;
@@ -66,13 +66,13 @@ $(document).ready(function() {
         power(); 
         
         function genre() {
-            if(q5Result === "Psychological") {
+            if(q5Result === "psychological") {
                 return 0;
-            } else if(q5Result === "Shounen") {
+            } else if(q5Result === "mahou shoujo") {
                 return 1;
-            } else if(q5Result === "Mahou Shoujo") {
+            } else if(q5Result === "dark fantasy") {
                 return 2;
-            } else if(q5Result === "RomCom") {
+            } else if(q5Result === "comedy") {
                 return 3;
             } else {
                 return 5;
@@ -84,21 +84,21 @@ $(document).ready(function() {
         var totalScore = namae() + dere() + protag() + power() + genre();
         
         function congrats() {
-            if(totalScore >= 0) {
+            if(totalScore <= 0) {
             name = q1Result;
             id = "Yuno";
             $(".result").text("Congratulations " + name + "! " + "You are " + id + "!");
-            } else if(totalScore >= 3) {
+            } else if(totalScore <= 4) {
             name = q1Result;
-            id = "Erina";
+            id = "Homura";
             $(".result").text("Congratulations " + name + "! " + "You are " + id + "!");
-            } else if(totalScore >= 6) {
+            } else if(totalScore <= 8) {
             name = q1Result;
             id = "Mikasa";
             $(".result").text("Congratulations " + name + "! " + "You are " + id + "!");
-            } else if(totalScore >= 9) {
+            } else if(totalScore <= 12) {
             name = q1Result;
-            id = "Homura";
+            id = "Erina";
             $(".result").text("Congratulations " + name + "! " + "You are " + id + "!");
             } 
             else {
@@ -111,3 +111,4 @@ $(document).ready(function() {
         congrats();
             });
         }); 
+        
