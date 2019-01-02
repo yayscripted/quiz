@@ -87,24 +87,29 @@ $(document).ready(function() {
             if(totalScore <= 0) {
             name = q1Result;
             id = "Yuno";
-            $(".result").text("Congratulations " + name + "! " + "You are " + id + "!");
+            $(".resulttext").text("Congratulations " + name + "! " + "You are " + id + "!");
+            $(".resultimg").html("<img class='yunimg' src='https://www.anime-planet.com/images/characters/yuno-gasai-10078.jpg?t=1507921014'>");
             } else if(totalScore <= 4) {
             name = q1Result;
             id = "Homura";
-            $(".result").text("Congratulations " + name + "! " + "You are " + id + "!");
+            $(".resulttext").text("Congratulations " + name + "! " + "You are " + id + "!");
+            $(".resultimg").html("<img class='homimg' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxUoHuo8aElX3kwI55zl2GfODPEPmqO8kWzfns9o1XDQULreckpQ'>");
             } else if(totalScore <= 8) {
             name = q1Result;
             id = "Mikasa";
-            $(".result").text("Congratulations " + name + "! " + "You are " + id + "!");
+            $(".resulttext").text("Congratulations " + name + "! " + "You are " + id + "!");
+            $(".resultimg").html("<img class='mikimg' src='https://cdn.myanimelist.net/images/characters/9/215563.jpg'>");
             } else if(totalScore <= 12) {
             name = q1Result;
             id = "Erina";
-            $(".result").text("Congratulations " + name + "! " + "You are " + id + "!");
+            $(".resulttext").text("Congratulations " + name + "! " + "You are " + id + "!");
+            $(".resultimg").html("<img class='eriimg' src='https://i.ytimg.com/vi/qLUS0zspc5c/maxresdefault.jpg'>");
             } 
             else {
                 name = q1Result;
-                id = "C.C."; 
-            $(".result").text("Congratulations " + name + "! " + "You are " + id + "!");
+                id = "Grell"; 
+            $(".resulttext").text("Congratulations " + name + "! " + "You are " + id + "!");
+            $(".resultimg").html("<img class='greimg' src='https://vignette.wikia.nocookie.net/kuroshitsuji/images/b/b7/Ep44_Grell_Sutcliff.png/revision/latest?cb=20140830030502'>");
             }
         } 
         

@@ -39,4 +39,4 @@ Make sure to check off your items as you complete them. [ ] => [x]
 - [x] Update the HTML and CSS to reflect your own style.
 - [x] Change the theme of the quiz.
 - [x] Add more questions to your quiz.
-- [ ] Update the function that displays the result so it displays an image in addition to the user-specific placement details.
+- [x] Update the function that displays the result so it displays an image in addition to the user-specific placement details.

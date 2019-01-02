@@ -12,11 +12,11 @@
 
 body {
     background-color: white;
+    padding: 20px;
 }
 
 .futatsu {
-    width: 50%;
-    height:50%;
+    width: 300px
 }
 
 #caption {
@@ -35,10 +35,6 @@ a {
 
 .shiro {
     color: grey;
-}
-
-.result {
-   text-align:center;
 }
 
 button {
@@ -86,4 +82,40 @@ body{
 
 .genreq {
     width: 350px;
+}
+
+.result {
+    display: flex;
+    width: 960px;
+}
+
+.resulttext {
+    width: 50%;
+    text-align:center;
+    margin: 50px;
+} 
+
+.resultimg {
+    width: 50%;
+    margin: 50px;
+}
+
+.eriimg {
+    width: 300px;
+}
+
+.greimg {
+    width: 200px;
+}
+
+.homimg {
+    width: 200px;
+}
+
+.mikimg {
+    width: 200px;
+}
+
+.yunimg {
+    width: 200px;
 }
